@@ -5,7 +5,7 @@
   "author": "Manjeet Kumar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mycmedia/homestar-scraper.git"
+    "url": "https://github.com/manjeetkmr18/homestar-scraper.git"
   },
   "main": "index.js",
   "scripts": {
