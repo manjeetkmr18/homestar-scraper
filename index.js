@@ -10,7 +10,3 @@ const { reviewsScraperController } = require('./controllers/reviewsScraperContro
 
 app.get('/profile', profileController);
 app.get('/reviews-scraper', reviewsScraperController);
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
