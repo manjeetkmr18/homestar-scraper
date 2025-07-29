@@ -14,6 +14,7 @@ async function profileController(req, res) {
       return res.status(404).json({ error: 'Profile not found or invalid URL' });
     }
     const profileData = await scrapeProfileData(result.page);
+
     await browser.close();
     if (!profileData || Object.values(profileData).every(v => v === null || v === '' || v === undefined)) {
       return res.status(404).json({ error: 'Profile not found or invalid URL' });

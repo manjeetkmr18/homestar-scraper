@@ -7,9 +7,9 @@ async function scrapeProfileData(page) {
       data.companyName = nameElement ? nameElement.textContent.trim() : null;
 
       // Extract company image
-      const imageElement = document.querySelector('.sc-c2e56f08-5 img');
+      const imageElement = document.querySelector('img[data-testid="profile-hero-avatar"]');
       data.companyImage = imageElement ? imageElement.getAttribute('src') : null;
-
+      
       // Extract rating
       const ratingElement = document.querySelector('[data-testid="rating-average"] strong');
       data.rating = ratingElement ? parseFloat(ratingElement.textContent.trim()) : null;
